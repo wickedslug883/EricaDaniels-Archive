@@ -1,0 +1,50 @@
+*{
+  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  position: relative;
+   z-index: 0;
+}
+.mainContent {
+  position: relative;
+  height: 90vh;
+  background-color: darkseagreen;
+}
+/* .hero{
+  position: relative;
+  z-index: 3;
+  height: 4vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../public/Landing.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+.navBase {
+  background-color: beige !important;
+}
+.navbar-brand {
+  font-weight: 900;
+  color:aliceblue !important;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.sc-button {
+  position: absolute;
+  z-index: 5;
+  right: 2.5%;
+  bottom: 5%;
+  overflow: hidden;
+}
+#sc-widget {
+  position: absolute;
+  z-index: 5;
+  right: 2.5%;
+  bottom: 5%;
+  overflow: hidden;
+ 
+}
