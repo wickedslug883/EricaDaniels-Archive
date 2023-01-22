@@ -1,0 +1,162 @@
+*{
+  /* overflow: hidden; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  /* position: relative;
+   z-index: 0; */
+}
+.mainContent {
+  position: relative;
+  height: 90vh;
+  background-color: darkseagreen;
+}
+
+/* .hero{
+  position: relative;
+  z-index: 3;
+  height: 4vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../public/Landing.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+.navContainer {
+
+padding: 0;
+margin: 0;
+
+}
+
+.navBase {
+  background-color: rgb(186, 176, 163) !important;
+ justify-content: right;
+ padding-right: 5%;
+ border-bottom: solid black 1px;
+ padding-top: 0;
+ padding-bottom: 0;
+}
+.navImage {
+  
+  height: 40px;
+  width: 45%;
+
+}
+.navbar-brand {
+  font-family: 'Cuneate', sans-serif;
+  font-weight: 900;
+  color:rgb(255, 255, 255) !important;
+  text-shadow: -1px -2px 0 rgb(0, 0, 0), 2px -1px 0 #000, -1px 2px 0 #000, 1px 1px 0 #000;
+  padding-left: 5px;
+  padding-right: 1rem;
+    margin-right: 1rem;
+}
+.navCollap {
+  flex-grow: 0;
+  
+ 
+}
+.navLink {
+  font-weight: 750;
+color:#000 !important;
+}
+.navLink:hover {
+ border-bottom: solid black 1px;
+ transition: 1.5s ease-in-out;
+}
+/* SoundCloud Button */
+.sc-button {
+  position: absolute;
+  z-index: 5;
+  right: 2.5%;
+  bottom: 5%;
+  overflow: hidden;
+}
+#sc-widget {
+  position: absolute;
+  z-index: 5;
+  right: 2.5%;
+  bottom: 5%;
+  overflow: hidden;
+ 
+}
+/* Login Page */
+#loginContainer {
+ background-color: rgb(0, 0, 0);
+}
+
+#loginCard {
+  height: 92vh;
+}
+#loginImage {
+  height: 92vh;
+}
+.loginBrand {
+  font-weight: 900;
+  font-size: xx-large;
+  font-stretch:wider;
+}
+.nav-pills .nav-link.active{
+  color:aliceblue !important;
+ background-color: #000000 !important;
+}
+.nav-link {
+  color: black ;
+}
+.form-check-input:checked {
+  background-color: #e0ec6e !important;
+  border-color: #3b064c !important;
+}
+.btn-primary {
+  background-color: #11064c;
+  border-color: #000000;
+  max-width: 50%;
+
+}
+.loginIcons {
+  height: 40px;
+  width: 40px;
+  color: #000;
+}
+#shopContainer {
+  background-color: #000000;
+  max-height: fit-content;
+}
+.shopImage {
+border: solid 5px;
+}
+.shopProductTitle {
+  border-bottom: solid black 1px
+}
+/* Calendar */
+.react-calendar__navigation {
+  text-align: center;
+}
+.react-calendar__navigation__label {
+ padding: 2px;
+ font-weight: 800;
+}
+.react-calendar__navigation__arrow {
+  width: 2rem;
+  margin: 15px;
+  font-weight: 800;
+}
+ .react-calendar__month-view__weekdays_weekday {
+
+ }
+ abbr {
+  font-weight: 500;
+ }
+ .react-calendar__viewContainer {
+  padding: 15px;
+ }
+ .react-calendar__tile {
+  height: 13vh;
+ }
+form {
+letter-spacing: 2px;
+}
