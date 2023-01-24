@@ -7,16 +7,17 @@ import Navbar from 'react-bootstrap/Navbar';
 function NavBase() {
   return (
     <Navbar className="navBase" bg="light" expand="lg">
-    <Container>
+    <Container className="navContainer">
       <Navbar.Brand  href="#home">Erica Daniels Music</Navbar.Brand>
+      <img className="navImage" src="https://cdn.discordapp.com/attachments/304399938949742594/1066255944645869668/ericaButterfly3.png"  />
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Collapse className="navCollap" id="basic-navbar-nav">
         <Nav className="me-auto justify-content-right ">
-          <Nav.Link href="/home">Bio</Nav.Link>
-          <Nav.Link href="/shop">Shop</Nav.Link>
-          <Nav.Link href="/events">Events</Nav.Link>
-          <Nav.Link href="/media">Media</Nav.Link>
-          <Nav.Link href="/login/sign-up">Login/Sign-Up</Nav.Link>
+          <Nav.Link className="navLink" href="/bio">Bio</Nav.Link>
+          <Nav.Link className="navLink" href="/shop">Shop</Nav.Link>
+          <Nav.Link className="navLink" href="/events">Events</Nav.Link>
+          <Nav.Link className="navLink" href="/media">Media</Nav.Link>
+          <Nav.Link className="navLink" href="/login/sign-up">Login/Sign-Up</Nav.Link>
           
         </Nav>
       </Navbar.Collapse>
