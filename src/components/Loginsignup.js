@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { faGithub, faTwitter, faGoogle} from '@fortawesome/free-brands-svg-icons';
-
+import axios from 'axios';
 import {
   MDBBtn,
   MDBContainer,
@@ -23,6 +22,28 @@ import {
 from 'mdb-react-ui-kit';
 
 function Loginsignup() {
+  const [state, setState] = useState({ email: '', password: '' });
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    const { email, password } = state;
+    try {
+      const res = await axios.post('http://localhost:3000/login/sign-up', { email, password });
+      console.log(res.data);
+    } catch (err) {
+      console.error(err);
+    }
+  }
+  const handleSignup = async (e) => {
+    console.log("hello");
+    e.preventDefault();
+    const { email, password } = state;
+    try {
+      const res = await axios.post('http://localhost:3000/login/sign-up', { email, password });
+      console.log(res.data);
+    } catch (err) {
+      console.error(err);
+    }
+  }
   const [justifyActive, setJustifyActive] = useState('tab1');;
 
   const handleJustifyClick = (value) => {
@@ -107,7 +128,7 @@ function Loginsignup() {
             <a href="!#">Forgot password?</a>
           </div>
 
-          <MDBBtn className="mb-4 w-100">Sign in</MDBBtn>
+          <MDBBtn onClick={handleLogin}>Login</MDBBtn>
           <p className="text-center">Not a member? <a href="#!">Register</a></p>
 
         </MDBTabsPane>
@@ -137,14 +158,14 @@ function Loginsignup() {
 
           <MDBInput wrapperClass='mb-4' label='Name' id='form1' type='text'/>
           <MDBInput wrapperClass='mb-4' label='Username' id='form1' type='text'/>
-          <MDBInput wrapperClass='mb-4' label='Email' id='form1' type='email'/>
-          <MDBInput wrapperClass='mb-4' label='Password' id='form1' type='password'/>
+          <MDBInput onChange={(e) => setState({ ...state, email: e.target.value })}wrapperClass='mb-4' label='Email' id='form1' type='email'/>
+          <MDBInput onChange={(e) => setState({ ...state, password: e.target.value })} wrapperClass='mb-4' label='Password' id='form1' type='password'/>
 
           <div className='d-flex justify-content-center mb-4'>
             <MDBCheckbox name='flexCheck' id='flexCheckDefault' label='I have read and agree to the terms' />
           </div>
 
-          <MDBBtn className="mb-4 w-100">Sign up</MDBBtn>
+          <MDBBtn onClick={handleSignup}>Signup</MDBBtn>
 
         </MDBTabsPane>
 
@@ -158,5 +179,7 @@ function Loginsignup() {
     </MDBContainer>
   );
 }
+
+
 
 export default Loginsignup;

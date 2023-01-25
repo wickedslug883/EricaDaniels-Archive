@@ -3,7 +3,7 @@ import Calendar from 'react-calendar';
 import  EventForm  from './EventForm.js';
 import  EventList  from './EventList.js';
 
-function Events() {
+function Events () {
     const [events, setEvents] = useState([]);
     const [selectedDate, setSelectedDate] = useState(new Date());
     const [eventFormData, setEventFormData] = useState({});
@@ -57,7 +57,7 @@ function Events() {
 
   return (
     <div>
-       <h1 style={{textAlign: 'center', color: 'white', fontWeight: '850', borderBottom: 'solid white 1px', borderTop: 'solid white 1px' ,    background: ' linear-gradient(180deg, rgba(255,203,203,1) 0%, rgba(4,3,6,1) 100%)'}}> SHOP</h1>
+       <h1 style={{textAlign: 'center', color: 'white', fontWeight: '850', borderBottom: 'solid white 1px', borderTop: 'solid white 1px' ,    background: ' linear-gradient(180deg, rgba(255,203,203,1) 0%, rgba(4,3,6,1) 100%)'}}> EVENTS</h1>
         <Calendar 
             value={selectedDate} 
             onChange={handleActiveDateChange} 
