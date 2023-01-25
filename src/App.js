@@ -1,7 +1,7 @@
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-
+import Home from './components/Home'
 import Bio from './components/Bio'
 import NavBase from './components/Navbar'
 import Shop from './components/Shop'
@@ -23,6 +23,7 @@ function App() {
     <div className='App'>
       <NavBase />
       <Routes>
+    <Route exact path="/" element={<Home />}/>   
      <Route exact path="/bio" element={<Bio />}/>
      <Route exact path="/shop"element={<Shop />}/>
      <Route exact path="/events"element={<Events />}/>
