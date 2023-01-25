@@ -1,4 +1,5 @@
-# Artist_page
+# Loose Bits
+
 Musical artists website featuring, bio, calendar, merchandise, sign-up for email updates.
 A musician has hired our team to build a website for promotion, and merchandise sales as well as artist bio info
 and a sign-up for email updates. 
@@ -22,7 +23,7 @@ The teams' motivation was to create a webpage application that allows users to c
 This is to allows users of the webpage to connect and support their favorite local artist. In this website it is Erica Daniels who is an up and coming Austin artist. 
 
 ## Elevator Pitch
-With the growing popularity of Golf, finding a compatable golfing group becomes increasingly important. That’s where Golf Buddies comes in to play. Simply pull up Golfbuddies.com on your favorite browser, create a profile, and get started matching with other similar golfers! As a bonus, you can even get the weather forecast. Golf Buddy is helping you change the way you golf!
+As more musicians enter the scene, it has been more difficult in keeping track of your favorite artist and support the artists directly. That's is where we come in as Loose Bits! We will help young artists create webpages for them to connect with fans by allow fans to create accounts to purchase merchandise and view tour and fan meetup dates. Loose Bits are helping artists grow and connect with their beloved fans! 
 
 ## Demo
 
