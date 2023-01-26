@@ -15,17 +15,86 @@ body {
   background-color: darkseagreen;
 }
 .home-container {
-  display: flex;
-  height: 100vh;
-  width: 100%;
-  background-image: url(../public/home.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgb(22, 5, 5);
+  height: 100vh; /* Takes up the full height of the viewport */
+  grid-template-rows: 1fr; /* Takes up all the available space */
+  display:flex;
+  justify-content: center;
+  
+}
+
+.landCircle {
   position: relative;
-  z-index: 1;
+  display: flex;
+  cursor:grab;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+  border: solid black 5px;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.landWelcome {
+  font-size: 3rem;
+  text-shadow: 1px 15px 2px black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#welcome1:hover {
+  color: #FF0101;
+  margin-bottom: -15px;
+}
+#welcome2:hover {
+  color: #FFEA00;
+  margin-bottom: -15px;
+}
+#welcome3:hover {
+  color: #1B0093;
+  margin-bottom: -15px;
+}
+#welcome4:hover {
+  color: #006E37;
+  margin-bottom: -15px;
+}
+#welcome5:hover {
+  color: #FF9966;
+  margin-bottom: -25px;
+}
+#welcome6:hover {
+  color: #FF0101;
+  margin-bottom: -15px;
+}
+#welcome7:hover {
+  color: #FFEA00;
+  margin-bottom: -15px;
+}
+#welcome8:hover {
+  color: #00ff59;
+  margin-bottom: -15px;
+}
+#welcome9:hover {
+  color: #00c3ff;
+  margin-bottom: -15px;
+}
+@media only screen and (max-device-width: 480px){
+  .landCircle {
+     width: 75vw;
+  height: 75vh;
   }
+  .landWelcome {
+    font-size: 2rem;
+  }
+  #loginImage {
+    display: none;
+  }
+}
+
+
 
 /* .hero{
   position: relative;
